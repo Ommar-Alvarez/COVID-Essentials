@@ -1,11 +1,12 @@
 package Main;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Output {
 
-    public String displayOutput(JSONArray response) {
+    public String displayOutput(JSONArray response) throws JSONException {
 
         String name;
         String address;
@@ -25,19 +26,19 @@ public class Output {
         return output;
     }
 
-    static String getName(JSONArray response, int i){
+    private static String getName(JSONArray response, int i) throws JSONException {
 
-       return response.getJSONObject(i).getString("name");
+        return response.getJSONObject(i).getString("name");
     }
 
-    static String getAddress(JSONArray response, int i){
+    private static String getAddress(JSONArray response, int i) throws JSONException {
 
         JSONObject object = (JSONObject) response.getJSONObject(i).get("location");
         JSONArray addressArray = (JSONArray) object.get("display_address");
         return addressArray.get(0).toString();
     }
 
-    static String getPhone(JSONArray response, int i){
+    private static String getPhone(JSONArray response, int i) throws JSONException {
 
         return response.getJSONObject(i).getString(("display_phone"));
     }
