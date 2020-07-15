@@ -1,7 +1,8 @@
 # COVID Essentials
   This repository contains an assigned project done for a Java Programming graduate course at the University of Nevada, Las Vegas. The project prompt was simple: create an innovative application that solves a real-world issue. The project was assigned briefly before univerisity classess became remote and COVID-19 quarantine restrictions came into effect in Las Vegas, Nevada.
 
-Given the fact that businesses in the Las Vegas Metropolitan Area will eventually reopen as the pandemic comes to an end, a gif demonstration is provided below to give a visual exam
+Given the fact that businesses in the Las Vegas Metropolitan Area will eventually reopen as the pandemic comes to an end, a visual demonstration is provided in the gif below:
+![Farmers Market Finder Demo](https://photos.app.goo.gl/CkC1a4ftJ67hphAs7)
 
 ## Purpose
   The intention of the COVID Essentials application is to provide users with a seamless experience in their search for businesses that continue to offer their services despite quarantine restrictions that may alter their business practice. It is an application with the intention of making the dissemination of information to consumers easier by taking Yelp a step further to only provide results for businesses that are still open during times of quarantine.
@@ -22,10 +23,10 @@ criteria consist of the arguments <i>term</i>, <i>location</i>, <i>price</i>, an
   As summarized in the <i>Figure 1</i> flowchart, once these criteria are entered into the application’s fields, these criteria are tokenized and fed into an HTTP builder, which builds a URL then sends a request to the Yelp Fusion API for information that fits the criteria. The Yelp Fusion API then translates these criteria into a GraphQL query that makes a call to Yelp’s vast database for instances that fit these criteria; more specifically, the query calls for the five aforementioned endpoints of instances that suit the criteria. Once the query is complete, the Yelp database then responds to the COVID Essential application by parsing the queried data into a JSON format, which is then returned back to the client. We intend to format the semi-structured data in the response into an intelligible format that the client can easily interpret.
 [FIGURE 1]
   
-  ### Framework
+### Framework
   We composed COVID Essentials using IntelliJ IDEA as the interactive development environment of choice, and heavily rely on the Maven core java framework. Maven offers the convenience of easily downloading project dependency libraries, as well as creating builds.
 
-  ### Modules
+### Modules
   We included the following modules in COVID Essentials’ development, the majority of which being JAR files relating to API interaction and the GUI:
     - Okhttp-3.6.0
     - Okio-1.11.0
