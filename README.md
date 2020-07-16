@@ -20,7 +20,7 @@ Yelp’s Fusion API current consists of six endpoints, though the application wi
   COVID Essentials requires four important criteria to initiate search activity. These criteria consist of the arguments <i>term</i>, <i>location</i>, <i>price</i>, and <i>limit</i>. The <i>term</i> argument provides the variable of interest that serves as the basis for the business search (<i>e.g.</i> restaurant, retailer, or any other service indicator). <i>Location</i> and <i>price</i> arguments serve as the variables that indicate specific preferences of the client that will serve as parameters for filtration. The <i>limit</i> argument indicates the “search limit,” or the desired number of hits that the user expects to choose from.
 
   As summarized in the <i>Figure 1</i> flowchart, once these criteria are entered into the application’s fields, these criteria are tokenized and fed into an HTTP builder, which builds a URL then sends a request to the Yelp Fusion API for information that fits the criteria. The Yelp Fusion API then translates these criteria into a GraphQL query that makes a call to Yelp’s vast database for instances that fit these criteria; more specifically, the query calls for the five aforementioned endpoints of instances that suit the criteria. Once the query is complete, the Yelp database then responds to the COVID Essential application by parsing the queried data into a JSON format, which is then returned back to the client. Before returning query results back to the owner, the JSON file is stylized into an intelligible format that the client can easily interpret.<br>
-![fig1](../master/demo/figure1.png)
+<img src="../master/demo/figure1.png" alt="fig1">
   
 ### Framework
   COVID Essentials was composed using IntelliJ IDEA as the interactive development environment of choice, and heavily rely on the Maven core java framework. Maven offers the convenience of easily downloading project dependency libraries, as well as creating builds.
@@ -38,7 +38,7 @@ Yelp’s Fusion API current consists of six endpoints, though the application wi
   
   ### User Interface
   The image below displays the JOptionPane responsible for containing JTextFields belonging to the <i>term</i>, <i>location</i>, and limit arguments, as well as the <i>price</i> radio button panel. The image featured on the left-side of the JOptionPane proudly displays our COVID Essentials logo.<br>
-<center><img src="../master/demo/ui1.png" width="400"></center>
+<img src="../master/demo/ui1.png" width="400" alt="ui1">
 <br>  The image below shows the output results for the client searching for sushi restaurants located in Las Vegas, with moderately expensive price preference, and search limited to the top 5 businesses in the desired area.<br>
-<img src="../master/demo/ui2.png" width="400" align="center">
+<img src="../master/demo/ui2.png" width="400" alt="ui2">
   
