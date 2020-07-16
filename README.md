@@ -38,7 +38,7 @@ Yelp’s Fusion API current consists of six endpoints, though the application wi
   
   ### User Interface
   The image below displays the JOptionPane responsible for containing JTextFields belonging to the <i>term</i>, <i>location</i>, and limit arguments, as well as the <i>price</i> radio button panel. The image featured on the left-side of the JOptionPane proudly displays our COVID Essentials logo.<br>
-<img src="../master/demo/ui1.png" width="500">
+<center><img src="../master/demo/ui1.png" width="400"></center>
 <br>  The image below shows the output results for the client searching for sushi restaurants located in Las Vegas, with moderately expensive price preference, and search limited to the top 5 businesses in the desired area.<br>
-![UI2](../master/demo/ui2.png){:height="700px" width="400px"}
+<center><img src="../master/demo/ui2.png" width="400"></center>
   
