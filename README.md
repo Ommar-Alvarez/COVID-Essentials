@@ -3,7 +3,7 @@
 
 Given the fact that businesses in the Las Vegas Metropolitan Area will eventually reopen as the pandemic comes to an end, a visual demonstration is provided in the gif below:
 <p align="center">
-  <img src="http://forgifs.com/gallery/d/212015-1/Skydiving-cat.gif" alt="demo">
+  <img src="https://photos.app.goo.gl/xyQk6YDqAZXwtUiV6" alt="demo">
 </p>
 
 ## Purpose
