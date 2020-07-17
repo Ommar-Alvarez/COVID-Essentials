@@ -3,7 +3,7 @@
 
 Given the fact that businesses in the Las Vegas Metropolitan Area will eventually reopen as the pandemic comes to an end, a visual demonstration is provided in the gif below:
 <p align="center">
-  <img src="../master/demo/figure1.png" alt="fig1">
+  <img src="../master/demo/demo_final.png" alt="fig1">
 </p>
 
 ## Purpose
